@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/Login">
+
+    <RelativeLayout
+        android:layout_width="368dp"
+        android:layout_height="495dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="8dp">
+
+        <Button
+            android:id="@+id/cadastre"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignTop="@+id/entrar"
+            android:layout_marginStart="25dp"
+            android:background="#16562d"
+            android:text="Cadastre-se"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="23dp"
+            tools:layout_editor_absoluteY="411dp" />
+
+        <Button
+            android:id="@+id/entrar"
+            android:layout_width="170dp"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/editTextUsuario"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="77dp"
+            android:background="#d4a32b"
+            android:text="Entrar"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="191dp"
+            tools:layout_editor_absoluteY="411dp" />
+
+        <TextView
+            android:id="@+id/textViewUsuario"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/editTextUsuario"
+            android:layout_alignStart="@+id/editTextUsuario"
+            android:layout_marginBottom="-207dp"
+            android:text="Usuario" />
+
+        <EditText
+            android:id="@+id/editTextUsuario"
+            android:layout_width="317dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:layout_marginTop="207dp"
+            android:ems="10"
+            android:inputType="textPersonName" />
+
+        <TextView
+            android:id="@+id/textViewSenha"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignStart="@+id/editTextSenha"
+            android:layout_marginBottom="209dp"
+            android:text="Senha" />
+
+        <EditText
+            android:id="@+id/editTextSenha"
+            android:layout_width="317dp"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/cadastre"
+            android:layout_below="@+id/textViewSenha"
+            android:layout_marginTop="-207dp"
+            android:ems="10"
+            android:inputType="textPassword" />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="186dp"
+            android:layout_height="184dp"
+            android:layout_centerHorizontal="true"
+            app:srcCompat="@mipmap/logo" />
+    </RelativeLayout>
+</android.support.constraint.ConstraintLayout>

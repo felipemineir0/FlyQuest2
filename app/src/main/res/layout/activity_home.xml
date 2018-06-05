@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/Home">
+
+    <RelativeLayout
+        android:layout_width="368dp"
+        android:layout_height="495dp"
+        android:orientation="vertical"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="8dp">
+
+        <Button
+            android:id="@+id/start"
+            android:layout_width="153dp"
+            android:layout_height="77dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="99dp"
+            android:layout_marginStart="-9dp"
+            android:layout_toEndOf="@+id/imageView"
+            android:background="#d4a32b"
+            android:onClick="startGame"
+            android:text="Start"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="116dp"
+            tools:layout_editor_absoluteY="328dp" />
+
+        <EditText
+            android:id="@+id/autoCompleteTextView"
+            android:layout_width="206dp"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/editText"
+            android:layout_alignTop="@+id/imageView"
+            android:text="Fulano Ciclano"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="127dp"
+            tools:layout_editor_absoluteY="49dp" />
+
+        <AutoCompleteTextView
+            android:id="@+id/editText"
+            android:layout_width="205dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/imageView"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="25dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="Pontuação = 54"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="127dp"
+            tools:layout_editor_absoluteY="95dp" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="99dp"
+            android:layout_height="103dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="64dp"
+            app:srcCompat="@mipmap/ic_logofq" />
+    </RelativeLayout>
+</android.support.constraint.ConstraintLayout>
